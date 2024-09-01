@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdbool.h>
+int main(){
+    int num;
+    printf("Enter a number :- ");
+    scanf("%d",&num);
+
+    int po;
+    printf("enter a position:-");
+    scanf("%d",&p);
+
+    int arr[10]={
+        1,4,8,5,16,7,2,9,18
+    };
+    if(arr[p]==num){
+        for (int i=po;i<=(sizeof(arr)/sizeof(int)-1);i++){
+        arr[i]=arr[i+1];
+        }
+        for(int i=0;i<11;i++){
+           printf("%d  ",arr[i]);
+        }
+    }
+    else{
+        printf(" not founded in at position");
+    }
+    
+    return 0;
+}
